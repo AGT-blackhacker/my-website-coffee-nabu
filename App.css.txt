@@ -1,0 +1,150 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfaf7; /* Warm off-white */
+  color: #2c2520; /* Deep coffee bean charcoal */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d4a36; /* Deep forest green */
+  padding: 1rem 2rem;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #f1e5d7;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-links button:hover, .nav-links button.active {
+  background-color: #3d6349;
+  color: #f1e5d7;
+}
+
+/* Layout Containers */
+.content-container {
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Home Header */
+.site-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #6f4e37; /* Coffee brown */
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.site-header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+}
+
+.site-header p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #f1e5d7;
+}
+
+/* Sections & Content */
+.about-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #2d4a36;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+ul {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.link-button {
+  background-color: #2d4a36;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.link-button:hover {
+  background-color: #1e3324;
+}
+
+.link-button:active {
+  transform: scale(0.98);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #2c2520;
+  color: #a89f98;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
